@@ -5,6 +5,7 @@ const Home: NextPage = () => {
     <>
       <header>
         <button>W&amp;D</button>
+        <button>CONTACT US</button>
       </header>
       <main>
         <h1>HACK THE PRECONCEIVED BIAS.</h1>        
