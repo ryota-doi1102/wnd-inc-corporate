@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <>
       <header>
         <button>W&amp;D</button>
       </header>
@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       <footer>
         <span>W&amp;D</span>
       </footer>
-    </div>
+    </>
   )
 }
 
