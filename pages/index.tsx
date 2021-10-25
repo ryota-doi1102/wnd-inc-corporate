@@ -8,28 +8,38 @@ const Home: NextPage = () => {
         <button>CONTACT US</button>
       </header>
       <main>
-        <h1>HACK THE PRECONCEIVED BIAS.</h1>
-        <img src="" alt="ファーストビュー"/>
-        <p>W&amp;Dでは、潜在的な課題を浮き彫りにし、技術の力で企業及び事業の成長を支えます。</p>
-        <section className="service">
-          <h1>service</h1>
-          <h2>アジャイル受託開発</h2>
-          <p>事業や会社をさらに成長させるためのお手伝いをさせていただきます。</p>
-          <p>ただ開発を行うのではなく、</p>
-          <p>「課題を明確化した上でどのようなアプローチで解決していくか」</p>
-          <p>それが我々の提供するシステム開発です。</p>
-          <p>Webサイトの制作から業務システムの開発、</p>
-          <p>システムリニューアルなど幅広く対応させていただきます。</p>
-          <img src="" alt="サイト制作"/>
-          <p>サイト制作</p>
-          <img src="" alt="Webサービス開発"/>
-          <p>Webサービス開発</p>
-          <img src="" alt="スマホアプリ開発"/>
-          <p>スマホアプリ開発</p>
+        <section>
+          <h1>HACK THE PRECONCEIVED BIAS.</h1>
+          <img src="" alt="ファーストビュー"/>
+          <p>W&amp;Dでは、潜在的な課題を浮き彫りにし、技術の力で企業及び事業の成長を支えます。</p>
+        </section>
+        <section>
+          <h2>SERVICE</h2>
+          <h3>アジャイル受託開発</h3>
+          <p>
+            事業や会社をさらに成長させるためのお手伝いをさせていただきます。<br/>
+            ただ開発を行うのではなく、<br/>
+            「課題を明確化した上でどのようなアプローチで解決していくか」<br/>
+            それが我々の提供するシステム開発です。<br/>
+            Webサイトの制作から業務システムの開発、<br/>
+            システムリニューアルなど幅広く対応させていただきます。
+          </p>
+          <div>
+            <img src="" alt="サイト制作"/>
+            <p>サイト制作</p>
+          </div>
+          <div>
+            <img src="" alt="Webサービス開発"/>
+            <p>Webサービス開発</p>
+          </div>
+          <div>
+            <img src="" alt="スマホアプリ開発"/>
+            <p>スマホアプリ開発</p>
+          </div>
           <button>詳しいサービス内容</button>
         </section>
         <section>
-          <h1>COMPANY</h1>
+          <h2>COMPANY</h2>
           <table>
             <tbody>
               <tr>
@@ -66,10 +76,34 @@ const Home: NextPage = () => {
               </tr>
             </tbody>
           </table>
+        </section>
+        <section>
+          <h2>CONTACT</h2>
+          <p>
+            制作についてのご相談・ご質問など、<br/>
+            お気軽にお問い合わせください。
+          </p>
+          <address>
+            tel:<a>03-5637-7729</a><br/>
+            e-mail:<a>contact@wnd.co.jp</a>
+          </address>
+          <form>
+            <label>お名前<span>必須</span></label>
+            <input type="text"/>
+            <label>所属<span>必須</span></label>
+            <input type="text"/>
+            <label>メールアドレス<span>必須</span></label>
+            <input type="email"/>
+            <label>お問い合わせ内容<span>必須</span></label>
+            <textarea></textarea>
+            <input type="submit" value="送信"/>
+          </form>
         </section> 
       </main>
       <footer>
         <span>W&amp;D</span>
+        <a>プライバシーポリシー</a>
+        <small>&copy; 2020 W&amp;D Inc.</small>
       </footer>
     </>
   )
