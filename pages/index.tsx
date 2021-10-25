@@ -103,7 +103,7 @@ const Home: NextPage = () => {
       <footer>
         <span>W&amp;D</span>
         <a>プライバシーポリシー</a>
-        <p><small>&copy; 2020 W&amp;D Inc.</small></p>
+        <small>&copy; 2020 W&amp;D Inc.</small>
       </footer>
     </>
   )
