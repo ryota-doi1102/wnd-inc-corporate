@@ -14,8 +14,8 @@ const Home: NextPage = () => {
           <p>W&amp;Dでは、潜在的な課題を浮き彫りにし、技術の力で企業及び事業の成長を支えます。</p>
         </section>
         <section>
-          <h1>service</h1>
-          <h2>アジャイル受託開発</h2>
+          <h2>SERVICE</h2>
+          <h3>アジャイル受託開発</h3>
           <p>
             事業や会社をさらに成長させるためのお手伝いをさせていただきます。<br/>
             ただ開発を行うのではなく、<br/>
@@ -39,7 +39,7 @@ const Home: NextPage = () => {
           <button>詳しいサービス内容</button>
         </section>
         <section>
-          <h1>COMPANY</h1>
+          <h2>COMPANY</h2>
           <table>
             <tbody>
               <tr>
@@ -78,30 +78,32 @@ const Home: NextPage = () => {
           </table>
         </section>
         <section>
-          <h1>CONTACT</h1>
+          <h2>CONTACT</h2>
           <p>
-            制作についてのご相談・ご質問など、
+            制作についてのご相談・ご質問など、<br/>
             お気軽にお問い合わせください。
           </p>
-          <p>tel:<a>03-5637-7729</a></p>
-          <p>e-mail:<a>contact@wnd.co.jp</a></p>
-          <div>
-            <p>お名前<span>必須</span></p>
-            <input/>
-            <p>所属<span>必須</span></p>
-            <input/>
-            <p>メールアドレス<span>必須</span></p>
-            <input/>
-            <p>お問い合わせ内容<span>必須</span></p>
+          <address>
+            tel:<a>03-5637-7729</a><br/>
+            e-mail:<a>contact@wnd.co.jp</a>
+          </address>
+          <form>
+            <label>お名前<span>必須</span></label>
+            <input type="text"/>
+            <label>所属<span>必須</span></label>
+            <input type="text"/>
+            <label>メールアドレス<span>必須</span></label>
+            <input type="email"/>
+            <label>お問い合わせ内容<span>必須</span></label>
             <textarea></textarea>
-            <button>送信</button>
-          </div>
+            <input type="submit" value="送信"/>
+          </form>
         </section> 
       </main>
       <footer>
         <span>W&amp;D</span>
-        <button>プライバシーポリシー</button>
-        <p>&copy; 2020 W&amp;D Inc.</p>
+        <a>プライバシーポリシー</a>
+        <p><small>&copy; 2020 W&amp;D Inc.</small></p>
       </footer>
     </>
   )
