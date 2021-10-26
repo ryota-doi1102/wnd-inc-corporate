@@ -1,13 +1,16 @@
+.header {
+    display: flex;
+  justify-content:
+  flex-between; 
+}
 .logo {
     margin-top: 40px;
     margin-left: 48px;
-    float: left;
 }
 
 .contact {
     margin-top: 40px;
     margin-right: 48px;
-    float: right;
     font-family: Futura;
     letter-spacing: 0.24em;
 }

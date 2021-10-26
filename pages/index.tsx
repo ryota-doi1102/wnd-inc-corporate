@@ -5,7 +5,7 @@ const Home: NextPage = () => {
   return (
     <>
       <header className={style.header}>
-        <a className={style.logo}><img src="/image/logo.png"/></a>
+        <a className={style.logo}><img src="/image/logo.svg"/></a>
         <a className={style.contact}>CONTACT US</a>
       </header>
       <main>
