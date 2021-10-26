@@ -1,11 +1,12 @@
 import type { NextPage } from 'next'
+import style from "../styles/Home.module.css"
 
 const Home: NextPage = () => {
   return (
     <>
-      <header>
-        <button>W&amp;D</button>
-        <button>CONTACT US</button>
+      <header className={style.header}>
+        <a className={style.logo}><img src="/image/logo.svg"/></a>
+        <a className={style.contact}>CONTACT US</a>
       </header>
       <main>
         <section>
