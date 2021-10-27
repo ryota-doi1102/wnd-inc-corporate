@@ -12,35 +12,39 @@ const Home: NextPage = () => {
         <button className={style.contact}>CONTACT US</button>
       </header>
       <main>
-        <section>
-          <h1>HACK THE PRECONCEIVED BIAS.</h1>
-          <img src="" alt="ファーストビュー"/>
+        <section className={style.mainSection}>
+          <h1><span>HACK</span> THE PRECONCEIVED BIAS.</h1>
+          <Img src="/image/firstView.svg" alt="ファーストビュー" width="340" height="230"/>
           <p>W&amp;Dでは、潜在的な課題を浮き彫りにし、技術の力で企業及び事業の成長を支えます。</p>
         </section>
-        <section>
-          <h2>SERVICE</h2>
-          <h3>アジャイル受託開発</h3>
-          <p>
-            事業や会社をさらに成長させるためのお手伝いをさせていただきます。<br/>
-            ただ開発を行うのではなく、<br/>
-            「課題を明確化した上でどのようなアプローチで解決していくか」<br/>
-            それが我々の提供するシステム開発です。<br/>
-            Webサイトの制作から業務システムの開発、<br/>
-            システムリニューアルなど幅広く対応させていただきます。
-          </p>
-          <div>
-            <img src="" alt="サイト制作"/>
-            <p>サイト制作</p>
+        <section className={style.serviceSection}>
+          <h2 className={style.sectionTitle}>SERVICE</h2>
+          <div className={style.serviceContents}>
+            <h3>アジャイル受託開発</h3>
+            <p>
+              事業や会社をさらに成長させるためのお手伝いをさせていただきます。<br/>
+              ただ開発を行うのではなく、<br/>
+              「課題を明確化した上でどのようなアプローチで解決していくか」<br/>
+              それが我々の提供するシステム開発です。<br/>
+              Webサイトの制作から業務システムの開発、<br/>
+              システムリニューアルなど幅広く対応させていただきます。
+            </p>
+            <ul className={style.serviceIndex}>
+              <li>
+                <Img src="/image/serviceHp.svg" alt="サイト制作" width="86" height="83"/>
+                <p>サイト制作</p>
+              </li>
+              <li>
+                <Img src="/image/serviceWeb.svg" alt="Webサービス開発" width="86" height="83"/>
+                <p>Webサービス開発</p>
+              </li>
+              <li>
+                <Img src="/image/serviceApp.svg" alt="スマホアプリ開発" width="86" height="83"/>
+                <p>スマホアプリ開発</p>
+              </li>
+            </ul>
+            <button>詳しいサービス内容</button>
           </div>
-          <div>
-            <img src="" alt="Webサービス開発"/>
-            <p>Webサービス開発</p>
-          </div>
-          <div>
-            <img src="" alt="スマホアプリ開発"/>
-            <p>スマホアプリ開発</p>
-          </div>
-          <button>詳しいサービス内容</button>
         </section>
         <section>
           <h2>COMPANY</h2>
