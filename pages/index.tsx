@@ -46,10 +46,10 @@ const Home: NextPage = () => {
             <button>詳しいサービス内容</button>
           </div>
         </section>
-        <section>
-          <h2>COMPANY</h2>
+        <section className={style.companySection}>
+          <h2 className={style.sectionTitle}>COMPANY</h2>
           <table>
-            <tbody>
+            <tbody className={style.companyInformation}>
               <tr>
                 <td>会社名</td>
                 <td>株式会社W&amp;D</td>
@@ -85,32 +85,40 @@ const Home: NextPage = () => {
             </tbody>
           </table>
         </section>
-        <section>
-          <h2>CONTACT</h2>
-          <p>
-            制作についてのご相談・ご質問など、<br/>
-            お気軽にお問い合わせください。
-          </p>
-          <address>
-            tel:<a>03-5637-7729</a><br/>
-            e-mail:<a>contact@wnd.co.jp</a>
-          </address>
-          <form>
-            <label>お名前<span>必須</span></label>
-            <input type="text"/>
-            <label>所属<span>必須</span></label>
-            <input type="text"/>
-            <label>メールアドレス<span>必須</span></label>
-            <input type="email"/>
-            <label>お問い合わせ内容<span>必須</span></label>
-            <textarea></textarea>
-            <input type="submit" value="送信"/>
-          </form>
+        <section className={style.contactSection}>
+          <div>
+            <h2 className={style.sectionTitle}>CONTACT</h2>
+            <p>
+              制作についてのご相談・ご質問など、<br/>
+              お気軽にお問い合わせください。
+            </p>
+            <address>
+              tel:<a>03-5637-7729</a><br/>
+              e-mail:<a>contact@wnd.co.jp</a>
+            </address>
+          </div>
+          <div>
+            <form>
+              <label>お名前<span>必須</span></label>
+              <input type="text"/>
+              <label>所属<span>必須</span></label>
+              <input type="text"/>
+              <label>メールアドレス<span>必須</span></label>
+              <input type="email"/>
+              <label>お問い合わせ内容<span>必須</span></label>
+              <textarea></textarea>
+            </form>
+            <input className={style.btn} type="submit" value="送信"/>
+        	</div> 
         </section> 
       </main>
-      <footer>
-        <span>W&amp;D</span>
-        <a>プライバシーポリシー</a>
+      <footer className={style.footer}>
+        <div>
+          <a className={style.logo}>
+            <Img src="/image/logo.svg" alt="ロゴ" width="60" height="20" />
+          </a>
+          <a>プライバシーポリシー</a>
+        </div>
         <small>&copy; 2020 W&amp;D Inc.</small>
       </footer>
     </>
