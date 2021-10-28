@@ -87,29 +87,29 @@ const Home: NextPage = () => {
         </section>
         <section className={style.contactSection}>
           <div>
-            <h2 className={style.sectionTitle}>CONTACT</h2>
-            <p>
-              制作についてのご相談・ご質問など、<br/>
-              お気軽にお問い合わせください。
-            </p>
-            <address>
-              tel:<a>03-5637-7729</a><br/>
-              e-mail:<a>contact@wnd.co.jp</a>
-            </address>
-          </div>
-          <div>
+            <div>
+              <h2 className={style.sectionTitle}>CONTACT</h2>
+              <p>
+                制作についてのご相談・ご質問など、<br/>
+                お気軽にお問い合わせください。
+              </p>
+              <address>
+                TEL：<a>03-5637-7729</a><br/>
+                e-mail：<a>contact@wnd.co.jp</a>
+              </address>
+            </div>
             <form>
               <label>お名前<span>必須</span></label>
-              <input type="text"/>
+              <input className={style.input} type="text" placeholder="山田　太郎"/>
               <label>所属<span>必須</span></label>
-              <input type="text"/>
+              <input className={style.input} type="text" placeholder="会社名、所属団体名など"/>
               <label>メールアドレス<span>必須</span></label>
-              <input type="email"/>
+              <input className={style.input} type="email" placeholder="mail@address.jp"/>
               <label>お問い合わせ内容<span>必須</span></label>
-              <textarea></textarea>
+              <textarea placeholder="お問い合わせ内容をご入力ください"/>
+              <input className={style.btn} type="submit" value="送信"/>
             </form>
-            <input className={style.btn} type="submit" value="送信"/>
-        	</div> 
+          </div>
         </section> 
       </main>
       <footer className={style.footer}>
