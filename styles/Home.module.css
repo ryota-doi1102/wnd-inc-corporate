@@ -142,8 +142,9 @@
     background-color: #F7F8FA;
     width: 840px;
     margin: 0 auto;
-    padding-top: 120px;
+    padding-top: 64px;
     padding-bottom: 70px;
+    margin-top: 120px;
 }
 
 .contactSection div p {
