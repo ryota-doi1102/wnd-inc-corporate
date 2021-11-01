@@ -1,3 +1,4 @@
+import { CompanyInfoTable, PageTitle, SectionTitle } from 'components/top';
 import type { NextPage } from 'next';
 import Img from 'next/image';
 import { Header } from '../components/common/header';
@@ -9,14 +10,12 @@ const Home: NextPage = () => {
       <Header />
       <main>
         <section className={style.mainSection}>
-          <h1>
-            <span>HACK</span> THE PRECONCEIVED BIAS.
-          </h1>
+          <PageTitle />
           <Img src="/image/firstView.svg" alt="ファーストビュー" width="340" height="230" />
           <p>W&amp;Dでは、潜在的な課題を浮き彫りにし、技術の力で企業及び事業の成長を支えます。</p>
         </section>
         <section className={style.serviceSection}>
-          <h2 className={style.sectionTitle}>SERVICE</h2>
+          <SectionTitle>SERVICE</SectionTitle>
           <div className={style.serviceContents}>
             <h3>アジャイル受託開発</h3>
             <p>
@@ -51,42 +50,7 @@ const Home: NextPage = () => {
         </section>
         <section className={style.companySection}>
           <h2 className={style.sectionTitle}>COMPANY</h2>
-          <table>
-            <tbody className={style.companyInformation}>
-              <tr>
-                <td>会社名</td>
-                <td>株式会社W&amp;D</td>
-              </tr>
-              <tr>
-                <td>事業内容</td>
-                <td>Web サービスの企画、制作、設計、開発、運営</td>
-              </tr>
-              <tr>
-                <td>設立</td>
-                <td>2021年2月</td>
-              </tr>
-              <tr>
-                <td>資本金</td>
-                <td>1,500,000円</td>
-              </tr>
-              <tr>
-                <td>取締役</td>
-                <td>代表取締役&nbsp;&nbsp;岡田シェーラン</td>
-              </tr>
-              <tr>
-                <td>メールアドレス</td>
-                <td>contact@wnd.co.jp</td>
-              </tr>
-              <tr>
-                <td>電話番号</td>
-                <td>03-5637-7729</td>
-              </tr>
-              <tr>
-                <td>所在地</td>
-                <td>東京都墨田区向島一丁目31-7KMG小梅301</td>
-              </tr>
-            </tbody>
-          </table>
+          <CompanyInfoTable />
         </section>
         <section className={style.contactSection}>
           <div>

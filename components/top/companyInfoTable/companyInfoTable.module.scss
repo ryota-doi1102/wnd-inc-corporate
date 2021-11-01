@@ -1,0 +1,15 @@
+.companyInformationTable {
+  td {
+    font-family: Noto Sans, sans-serif;
+    &:nth-child(2n) {
+      padding-left: 66px;
+      font-size: 14px;
+      line-height: 270%;
+    }
+    &:nth-child(2n + 1) {
+      font-size: 13px;
+      line-height: 290%;
+      color: #5c5f76;
+    }
+  }
+}
