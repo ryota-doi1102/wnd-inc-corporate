@@ -1,16 +1,12 @@
 import type { NextPage } from 'next'
 import Img from 'next/image'
+import { Header } from '../components/common/header'
 import style from "../styles/Home.module.css"
 
 const Home: NextPage = () => {
   return (
     <>
-      <header className={style.header}>
-        <a className={style.logo}>
-          <Img src="/image/logo.svg" alt="ロゴ" width="60" height="20" />
-        </a>
-        <button className={style.contact}>CONTACT US</button>
-      </header>
+      <Header />
       <main>
         <section className={style.mainSection}>
           <h1><span>HACK</span> THE PRECONCEIVED BIAS.</h1>
