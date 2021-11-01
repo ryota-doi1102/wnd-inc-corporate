@@ -1,7 +1,7 @@
+import { Header, Footer } from 'components/common';
 import { CompanyInfoTable, ContactForm, PageTitle, SectionTitle } from 'components/top';
 import type { NextPage } from 'next';
 import Img from 'next/image';
-import { Header } from '../components/common/header';
 import style from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
@@ -49,13 +49,13 @@ const Home: NextPage = () => {
           </div>
         </section>
         <section className={style.companySection}>
-          <h2 className={style.sectionTitle}>COMPANY</h2>
+          <SectionTitle>COMPANY</SectionTitle>
           <CompanyInfoTable />
         </section>
         <section className={style.contactSection}>
           <div>
             <div>
-              <h2 className={style.sectionTitle}>CONTACT</h2>
+              <SectionTitle>CONTACT</SectionTitle>
               <p>
                 制作についてのご相談・ご質問など、
                 <br />
@@ -71,15 +71,7 @@ const Home: NextPage = () => {
           </div>
         </section>
       </main>
-      <footer className={style.footer}>
-        <div>
-          <a className={style.logo}>
-            <Img src="/image/logo.svg" alt="ロゴ" width="60" height="20" />
-          </a>
-          <a>プライバシーポリシー</a>
-        </div>
-        <small>&copy; 2020 W&amp;D Inc.</small>
-      </footer>
+      <Footer />
     </>
   );
 };
