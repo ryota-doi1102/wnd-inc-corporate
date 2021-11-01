@@ -1,18 +1,18 @@
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 40px 48px 0;
     height: 80px;
+    padding: 40px 48px 0;
 
     a {
-        margin: auto 0;
+    margin: auto 0;
     }
 
     button {
-        font-family: Futura;
-        letter-spacing: 0.24em;
+        font-family: Futura, sans-serif;
         font-size: 16px;
         line-height: 21px;
+        letter-spacing: 0.24em;
         background: none;
         border: none;
     }
