@@ -1,7 +1,7 @@
-import type { NextPage } from "next";
-import Img from "next/image";
-import { Header } from "../components/common/header";
-import style from "../styles/Home.module.css";
+import type { NextPage } from 'next';
+import Img from 'next/image';
+import { Header } from '../components/common/header';
+import style from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
   return (
@@ -12,15 +12,8 @@ const Home: NextPage = () => {
           <h1>
             <span>HACK</span> THE PRECONCEIVED BIAS.
           </h1>
-          <Img
-            src="/image/firstView.svg"
-            alt="ファーストビュー"
-            width="340"
-            height="230"
-          />
-          <p>
-            W&amp;Dでは、潜在的な課題を浮き彫りにし、技術の力で企業及び事業の成長を支えます。
-          </p>
+          <Img src="/image/firstView.svg" alt="ファーストビュー" width="340" height="230" />
+          <p>W&amp;Dでは、潜在的な課題を浮き彫りにし、技術の力で企業及び事業の成長を支えます。</p>
         </section>
         <section className={style.serviceSection}>
           <h2 className={style.sectionTitle}>SERVICE</h2>
@@ -41,30 +34,15 @@ const Home: NextPage = () => {
             </p>
             <ul className={style.serviceIndex}>
               <li>
-                <Img
-                  src="/image/serviceHp.svg"
-                  alt="サイト制作"
-                  width="86"
-                  height="83"
-                />
+                <Img src="/image/serviceHp.svg" alt="サイト制作" width="86" height="83" />
                 <p>サイト制作</p>
               </li>
               <li>
-                <Img
-                  src="/image/serviceWeb.svg"
-                  alt="Webサービス開発"
-                  width="86"
-                  height="83"
-                />
+                <Img src="/image/serviceWeb.svg" alt="Webサービス開発" width="86" height="83" />
                 <p>Webサービス開発</p>
               </li>
               <li>
-                <Img
-                  src="/image/serviceApp.svg"
-                  alt="スマホアプリ開発"
-                  width="86"
-                  height="83"
-                />
+                <Img src="/image/serviceApp.svg" alt="スマホアプリ開発" width="86" height="83" />
                 <p>スマホアプリ開発</p>
               </li>
             </ul>
@@ -129,27 +107,15 @@ const Home: NextPage = () => {
               <label>
                 お名前<span>必須</span>
               </label>
-              <input
-                className={style.input}
-                type="text"
-                placeholder="山田　太郎"
-              />
+              <input className={style.input} type="text" placeholder="山田　太郎" />
               <label>
                 所属<span>必須</span>
               </label>
-              <input
-                className={style.input}
-                type="text"
-                placeholder="会社名、所属団体名など"
-              />
+              <input className={style.input} type="text" placeholder="会社名、所属団体名など" />
               <label>
                 メールアドレス<span>必須</span>
               </label>
-              <input
-                className={style.input}
-                type="email"
-                placeholder="mail@address.jp"
-              />
+              <input className={style.input} type="email" placeholder="mail@address.jp" />
               <label>
                 お問い合わせ内容<span>必須</span>
               </label>
