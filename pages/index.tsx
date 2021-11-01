@@ -1,4 +1,4 @@
-import { CompanyInfoTable, PageTitle, SectionTitle } from 'components/top';
+import { CompanyInfoTable, ContactForm, PageTitle, SectionTitle } from 'components/top';
 import type { NextPage } from 'next';
 import Img from 'next/image';
 import { Header } from '../components/common/header';
@@ -67,25 +67,7 @@ const Home: NextPage = () => {
                 e-mail：<a>contact@wnd.co.jp</a>
               </address>
             </div>
-            <form>
-              <label>
-                お名前<span>必須</span>
-              </label>
-              <input className={style.input} type="text" placeholder="山田　太郎" />
-              <label>
-                所属<span>必須</span>
-              </label>
-              <input className={style.input} type="text" placeholder="会社名、所属団体名など" />
-              <label>
-                メールアドレス<span>必須</span>
-              </label>
-              <input className={style.input} type="email" placeholder="mail@address.jp" />
-              <label>
-                お問い合わせ内容<span>必須</span>
-              </label>
-              <textarea placeholder="お問い合わせ内容をご入力ください" />
-              <input className={style.btn} type="submit" value="送信" />
-            </form>
+            <ContactForm />
           </div>
         </section>
       </main>
